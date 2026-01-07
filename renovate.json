@@ -1,7 +1,7 @@
 {
     "customDatasources": {
         "sample": {
-            "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/markspolakovs/renovate-concurrency-repro/3e889f078b323c575158f8b3eac800412a8af91c/custom-data.json",
+            "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/markspolakovs/renovate-concurrency-repro/a134e1733e966fcd98a04217b00f0015c7f1f6da/custom-data.json",
             "format": "json",
             "transformTemplates": [
                 "$$.assets.links[name.$contains(\"{{{packageName}}}\")].name.$replace(/^.*_(.+?)_.*$/, '$1')",

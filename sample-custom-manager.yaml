@@ -4,3 +4,17 @@ project-1: v0.0.1
 project-2: v1.0.0
 # renovate: datasource=custom.sample
 project-3: v2.0.0
+# renovate: datasource=custom.sample
+project-4: v1.0.0
+# renovate: datasource=custom.sample
+project-5: v1.0.0
+# renovate: datasource=custom.sample
+project-6: v1.0.0
+# renovate: datasource=custom.sample
+project-7: v1.0.0
+# renovate: datasource=custom.sample
+project-8: v1.0.0
+# renovate: datasource=custom.sample
+project-9: v1.0.0
+# renovate: datasource=custom.sample
+project-10: v1.0.0
