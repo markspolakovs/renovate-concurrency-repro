@@ -1,17 +1,9 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# Repro for renovatebot/renovate#40311
 
 ## Current behavior
 
-Explain the current behavior here.
-
-## Expected behavior
-
-Explain the expected behavior here.
+Occasionally, JSONata expressions that use `$$` produce incorrect data because the `$` binding of their environment gets modified concurrently.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/40311
