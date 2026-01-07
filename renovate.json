@@ -1,1 +1,21 @@
-{}
+{
+    "customDatasources": {
+        "sample": {
+            "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/markspolakovs/renovate-concurrency-repro/refs/heads/main/custom-data.json",
+            "format": "json",
+            "transformTemplates": [
+                "$$.assets.links[name.$contains(\"project-1\")].name.$replace(/^.*_(.+?)_.*$/, '$1')",
+                "{ 'releases': $map($$, function($r) { { 'version': $r } }) }"
+            ]
+        }
+    },
+    "customManagers": [
+        {
+            "customType": "regex",
+            "managerFilePatterns": ["sample-custom-manager.yaml"],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>\\S+?)\\n\\s*(?<depName>[^:#]+?):\\s*?['\"]?(?<currentValue>\\S+?)['\"]?[\\s$]"
+            ]
+        }
+    ]
+}
