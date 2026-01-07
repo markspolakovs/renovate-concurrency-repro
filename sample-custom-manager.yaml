@@ -2,3 +2,5 @@
 project-1: v0.0.1
 # renovate: datasource=custom.sample
 project-2: v1.0.0
+# renovate: datasource=custom.sample
+project-3: v2.0.0
